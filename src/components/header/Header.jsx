@@ -1,19 +1,21 @@
 import React from 'react'
-import {NavLink,Route,Switch} from 'react-router-dom'
+import { NavLink, Route, Switch } from 'react-router-dom'
 import Home from '../home/Home'
 import About from '../about/About'
 import Product from '../product/Product'
 import User from '../user/User'
 import Company from '../company/Company'
+import Message from "../home/message"
 import Qualifications from '../qualifications/Qualifications'
 import './header.scss'
+import Contact from '../home/contact'
 export default function Header() {
     return (
         <>
             <div className="navBox">
                 <nav className='navtab'>
                     <div className="navlogo">
-                        <img src='/header/20407796_1601348957.png' alt=""/>
+                        <img src='/header/20407796_1601348957.png' alt="" />
                     </div>
                     <ul>
                         <li>
@@ -48,6 +50,8 @@ export default function Header() {
                     <Route path="/user" component={User} />
                     <Route path="/company" component={Company} />
                     <Route path="/qualifications" component={Qualifications} />
+                    <Route path='/message' component={Message} />
+                    <Route path='/contact' component={Contact} />
                 </Switch>
             </div>
         </>

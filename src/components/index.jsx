@@ -6,7 +6,7 @@ export default function App(){
     return (
         <BrowserRouter>
             <Header/>
-            <Footer/>
+            {/* <Footer/> */}
         </BrowserRouter>
     )
 }
