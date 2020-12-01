@@ -1,0 +1,56 @@
+.map {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  .mapBanner {
+    width: 100%;
+    height: 600px;
+    // margin-top: 150px;
+    background-color: #f2f2f2;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .mapBox {
+    width: 60%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    display: flex;
+    .connect {
+      width: 34%;
+      height: 500px;
+      .connent-title {
+        width: 100%;
+        height: 100px;
+        color: #014aa9;
+        font-size: 26px;
+        padding-left: 30px;
+        padding-top: 60px;
+      }
+      .connect-number {
+        width: 80%;
+        // height: 80px;
+        margin: 0 auto;
+        padding-top: 10px;
+        border-bottom: 1px solid #ccc;
+        font-size: 13px;
+        p {
+          padding-left: 30px;
+        }
+      }
+    }
+    .mapimg {
+      width: 66%;
+      height: 500px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
