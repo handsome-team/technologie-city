@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink,Route,Switch} from 'react-router-dom'
+import { NavLink, Route, Switch } from 'react-router-dom'
 import Home from '../home/Home'
 import About from '../about/About'
 import Product from '../product/Product'
@@ -13,7 +13,7 @@ export default function Header() {
             <div className="navBox">
                 <nav className='navtab'>
                     <div className="navlogo">
-                        <img src='/header/20407796_1601348957.png' alt=""/>
+                        <img src='/header/20407796_1601348957.png' alt="" />
                     </div>
                     <ul>
                         <li>
@@ -38,8 +38,8 @@ export default function Header() {
 
                 </nav>
                 <div className='iconBox'>
-                    <span className="icon1 iconfont">&#xe637;</span>
-                    <span className="icon2 iconfont">&#xe61a;</span>
+                    <img src="/header/微信 (5).png" alt="" />
+                    <img src="/header/微博 (2).png" alt="" />
                 </div>
                 <Switch>
                     <Route path="/" exact component={Home} />
