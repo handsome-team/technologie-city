@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import "./home.scss"
 import Tabbar from "./tabBar"
 import Companys from './companys'
-
+import Footer from '../footer/Footer'
 import { Carousel } from 'antd';
 const contentStyle = {
     height: '90vh',
@@ -107,6 +107,7 @@ export default class Home extends Component {
                         </NavLink>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

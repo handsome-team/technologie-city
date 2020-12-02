@@ -1,5 +1,5 @@
 import { useParams, useLocation } from "react-router-dom";
-import { getCompanyDetailData } from "../../api/index";
+import { getCompanyDetail } from "../../api/index";
 import "./details.scss";
 import { useEffect, useState } from "react";
 
@@ -12,7 +12,7 @@ export default function Details() {
     const getdata = async (id) => {
       let {
         data: { data },
-      } = await getCompanyDetailData(id);
+      } = await getCompanyDetail(id);
       changeDataList(data);
     };
     getdata(id);

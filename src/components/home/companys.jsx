@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
 import './company.scss'
+import { getCompanyData } from '../../api/index'
 
 const companyArray = [
     { url: "/home/1-未点击_u127.png", title: "2018年08月 智博会", content: "2018年8月23日，首届中国国际智能产业博览会在重庆国际博览中心....." },
@@ -12,6 +12,13 @@ const Company = () => {
     const onShow = (index) => {
         setShow(index)
     }
+    useEffect(() => {
+        const getcompany = async () => {
+            const obj = await getCompanyData();
+            console.log(obj)
+        }
+        getcompany()
+    }, [])
     return (
         <div className="company-box">
             <div className="company-left">
