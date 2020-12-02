@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import "./home.scss"
 import Tabbar from "./tabBar"
-import Company from './company'
+import Companys from './companys'
 
 import { Carousel } from 'antd';
 const contentStyle = {
@@ -99,7 +99,7 @@ export default class Home extends Component {
                         <img src="/home/u119.png" alt="" />
                     </div>
                     {/* 选项卡 */}
-                    <Company />
+                    <Companys />
                     <div className="company-tab">
                         <NavLink to="/company">
                             <img className='btn-img' src="/home/u50.png" alt="" />

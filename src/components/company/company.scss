@@ -1,0 +1,102 @@
+.companyBox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -168px;
+    left: 0px;
+    z-index: -1;
+    .companyBanner{
+        width: 100%;
+        height: 500px;
+     img {
+         width: 100%;
+         height: 150%;
+     }
+    }
+}
+
+.companyCenter{
+    width: 100%;
+    height: 400px;
+    margin-top: 250px;
+    p{
+        margin-left: 140px;
+        color: #014aaa;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+.swiper{
+    height: 550px;
+    // background: red;
+    // .slideOne{
+    //     // background: yellow;
+    // }
+    .slideLeft{
+        width: 50%;
+        height: 550px;
+        
+        float: left;
+        position: absolute;
+        h1{
+           position: relative;
+           top: 150px;
+           left: 250px;
+        }
+        .slideShenyang{
+            position: relative;
+            top: 150px;
+            left: 260px;
+            font-size: 22px;
+        }
+        .slideImg{
+           position: relative;
+           top: -85px;
+           left: 300px;
+        }
+        .slideSpan{
+         font-size: 24px;   
+         position: relative;
+         top: 220px;
+         left: 100px;
+         width: 320px;
+         color: black;
+        }
+        .slideMore{
+            width: 100px;
+            height: 50px;
+            background: yellow;
+            position: relative;
+            top: 80px;
+            left: 250px;
+            span{
+         text-align: center;
+         font-size: 22px;
+         font-weight: 500;
+         color: white;
+         line-height: 50px;
+         margin-left: 18px;
+            }
+        }
+    }
+    .slideRight{
+        width: 50%;
+        height: 550px;
+        // background: pink;
+        float: right;
+        .slideGray{
+            width: 250px;
+            height: 450px;
+            background: gray;
+            position: relative;
+            top: 60px;
+            left: 250px;
+        }
+        .Img{
+            position: relative;
+            top: 60px;
+            left: -80px;
+        }
+    }
+
+}

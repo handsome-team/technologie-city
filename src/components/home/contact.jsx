@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './contact.scss'
-// import Map from '../map/Map'
-// import Footer from '../footer/Footer'
+import Map from '../map/Map'
+import Footer from '../footer/Footer'
 export default class Contact extends Component {
     render() {
         return (
@@ -23,8 +23,8 @@ export default class Contact extends Component {
                         <p>公司地址:重庆市北陪区高新园方正大道266号</p>
                     </div>
                 </div>
-                {/* <Map /> */}
-                {/* <Footer /> */}
+                <Map />
+                <Footer />
             </div>
         )
     }
