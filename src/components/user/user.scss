@@ -1,0 +1,139 @@
+.usercontainer {
+  width: 100%;
+  height: 100%;
+  .user-banner {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .fontbox {
+      width: 60%;
+      height: 40%;
+      position: absolute;
+      top: 23%;
+      left: 10%;
+      // background: salmon;
+      color: #ffffff;
+      h1 {
+        font-size: 80px;
+        color: #ffffff;
+        // padding: 10px;
+      }
+      span {
+        font-size: 50px;
+        padding-left: 10px;
+      }
+      .spans {
+        padding-left: 33px;
+      }
+      p {
+        font-size: 25px;
+        word-spacing: 8px;
+        padding-top: 70px;
+        padding-left: 12px;
+      }
+    }
+  }
+  .titlebox {
+    margin: 60px 180px;
+    font-size: 22px;
+
+    .shouye {
+      color: #014aa9;
+      font-weight: 600;
+    }
+  }
+  // }
+  .swiperbox {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 80px;
+    position: relative;
+    .swiper-imgbox {
+      width: 70%;
+      height: 450px;
+      margin: 20px auto;
+    }
+    .firstbox,
+    .second {
+      .one {
+        width: 30%;
+        height: 450px;
+        float: left;
+        position: relative;
+        margin-left: 24px;
+        .hiddenfont {
+          width: 100%;
+          height: 450px;
+          background: #014aaa;
+          opacity: 0.8;
+          position: absolute;
+          top: 78%;
+          left: 0%;
+          // display: none;
+          overflow: hidden;
+          transition: top 0.5s;
+          h2 {
+            color: #ffffff;
+            padding-left: 35px;
+            margin: 20px 0px 60px 0px;
+            // text-align: center;
+          }
+          p {
+            font-size: 18px;
+            color: #ffffff;
+            padding-left: 35px;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .one:hover .hiddenfont {
+        top: 0%;
+      }
+    }
+    .leftarrow {
+      position: absolute;
+      top: 40%;
+      left: 7%;
+    }
+    .leftarrowhidden {
+      position: absolute;
+      top: 40%;
+      left: 7%;
+    }
+    .rightarrow {
+      position: absolute;
+      top: 40%;
+      right: 7%;
+    }
+    .rightarrowhidden {
+      position: absolute;
+      top: 40%;
+      right: 7%;
+    }
+  }
+}
+// antd 默认样式
+.ant-carousel .slick-dots li {
+  width: 80px;
+}
+.ant-carousel .slick-dots li.slick-active {
+  width: 100px;
+}
+.ant-carousel .slick-dots li button {
+  background: gray !important;
+  opacity: 1;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  background: rgba(255, 213, 86, 1) !important;
+  opacity: 1 !important;
+}
+.ant-carousel .slick-dots-bottom {
+  bottom: -50px !important;
+}
