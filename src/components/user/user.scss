@@ -13,7 +13,7 @@
       width: 60%;
       height: 40%;
       position: absolute;
-      top: 23%;
+      top: 143%;
       left: 10%;
       // background: salmon;
       color: #ffffff;
@@ -120,6 +120,9 @@
   }
 }
 // antd 默认样式
+.ant-carousel .slick-dots {
+  margin-left: -15% !important;
+}
 .ant-carousel .slick-dots li {
   width: 80px;
 }

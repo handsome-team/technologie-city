@@ -2,6 +2,7 @@ import { Carousel } from "antd";
 import { useState, useRef, useEffect } from "react";
 import { getuserProject } from "../../api/index";
 import Footer from '../footer/Footer'
+import Map from '../map/Map'
 import './user.scss'
 function onChange(a, b, c) {
   console.log(a, b, c);
@@ -14,13 +15,16 @@ export default function User() {
   useEffect(() => {
     const getdata = async () => {
       let {
-        data: { data }
+        data, code
       } = await getuserProject();
-      let newArray = [];
-      for (var i = 0; i < data.length; i += 3) {
-        newArray.push(data.slice(i, i + 3));
-      };
-      getDataList(newArray);
+      if (code === 200) {
+        let newArray = [];
+        for (var i = 0; i < data.length; i += 3) {
+          newArray.push(data.slice(i, i + 3));
+        };
+        console.log(await getuserProject())
+        getDataList(newArray);
+      }
     };
     getdata();
   }, []);
@@ -117,6 +121,9 @@ export default function User() {
           </div>
         </div>
       </div>
+      {/* 地图 */}
+      <Map />
+      {/* 底部 */}
       <Footer />
     </div>
   );

@@ -4,6 +4,7 @@ import { getAboutus } from "../../api/index";
 
 import { useState, useEffect } from "react";
 import Footer from '../footer/Footer'
+import Map from '../map/Map'
 // 组件
 export default function About(props) {
   // 当前页面
@@ -13,9 +14,10 @@ export default function About(props) {
   const [datalist, setDatalist] = useState([]);
   useEffect(() => {
     const getAboutData = async () => {
-      let { data: { data } } = await getAboutus();
-      console.log(await getAboutus())
-      setDatalist(data);
+      let { data, code } = await getAboutus();
+      if (code == 200) {
+        setDatalist(data);
+      }
     };
     getAboutData();
   }, []);
@@ -181,6 +183,8 @@ export default function About(props) {
           </div>
         </div>
       </div>
+      {/* 地图 */}
+      <Map />
       {/* 底部 */}
       <Footer />
     </div>

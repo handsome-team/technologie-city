@@ -1,11 +1,34 @@
 import axios from "axios";
 const baseURL = "http://localhost:9700";
+
+// 设置一个响应拦截器
+axios.interceptors.response.use(
+  res => res.data,
+  err => Promise.reject(err)
+);
+
+const getCompanyData = () => {
+  return axios.get(`${baseURL}/company`);
+};
+
+const getCompanyDetail = id => {
+  return axios.get(`${baseURL}/company/detail?id=${id}`);
+};
+const getConnetData = () => {
+  return axios.post(baseURL + "/qualifications");
+};
 // 用户案例
 const getuserProject = () => {
-  return axios.post(baseURL + "/userpro");
+  return axios.get(baseURL + "/userpro");
 };
 // 关于我们
 const getAboutus = () => {
-  return axios.post(baseURL + "/aboutus");
+  return axios.get(baseURL + "/aboutus");
 };
-export { getuserProject, getAboutus };
+export {
+  getCompanyData,
+  getCompanyDetail,
+  getConnetData,
+  getuserProject,
+  getAboutus
+};
