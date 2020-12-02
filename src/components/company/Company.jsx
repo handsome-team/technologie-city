@@ -12,7 +12,8 @@ import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
-
+import Footer from "../footer/Footer";
+import Map from "../map/Map";
 // install Swiper components
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export default function Company() {
@@ -20,14 +21,11 @@ export default function Company() {
 
   useEffect(() => {
     const getdata = async () => {
-      let {
-        data: { data },
-      } = await getCompanyData();
+      let { data } = await getCompanyData();
       changeDataList(data);
     };
     getdata();
   }, []);
-  console.log(dataList);
 
   return (
     <div className="companyBox">
@@ -47,7 +45,7 @@ export default function Company() {
         >
           {
             // 判断请求结果是否为空,如果为空就渲染空标签,如果有数据就渲染dom结构
-            dataList.length == 0 ? (
+            dataList.length === 0 ? (
               <></>
             ) : (
               dataList.map((item, index) => {
@@ -84,7 +82,10 @@ export default function Company() {
           }
         </Swiper>
       </div>
-                                       
+         
+      <Map />
+      <Footer />
+                                  
     </div>
   );
 }

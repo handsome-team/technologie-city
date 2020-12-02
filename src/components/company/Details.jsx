@@ -1,8 +1,9 @@
 import { useParams, useLocation } from "react-router-dom";
-import { getCompanyDetailData } from "../../api/index";
+import { getCompanyDetail } from "../../api/index";
 import "./details.scss";
 import { useEffect, useState } from "react";
-
+import Map from "../map/Map";
+import Footer from "../footer/Footer";
 export default function Details() {
   const route = useLocation();
   const [dataList, changeDataList] = useState([]);
@@ -10,16 +11,14 @@ export default function Details() {
 
   useEffect(() => {
     const getdata = async (id) => {
-      let {
-        data: { data },
-      } = await getCompanyDetailData(id);
+      let { data } = await getCompanyDetail(id);
       changeDataList(data);
     };
     getdata(id);
   }, []);
+
   console.log(dataList);
 
-  console.log(route);
   return (
     <div className="bigDiv">
       {dataList[0] && (
@@ -48,6 +47,8 @@ export default function Details() {
           </div>
         </>
       )}
+      <Map />
+      <Footer />
     </div>
   );
 }
