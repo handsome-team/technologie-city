@@ -6,12 +6,11 @@ export default function Map() {
     // 获取联系电话数据
     useEffect(() => {
         const getconnectdata = async () => {
-            let { data: { data } } = await getConnetData()
+            let { data } = await getConnetData()
             setconnect(data)
         }
         getconnectdata()
     }, [])
-    console.log(getconnect)
     return (
         <div className="map">
             <div className="mapBanner">

@@ -21,22 +21,22 @@ export default function Header() {
           </div>
           <ul>
             <li>
-              <NavLink to="/">首页</NavLink>
+              <NavLink to="/" exact activeStyle={{ color: '' }} activeClassName='active'>首页</NavLink>
             </li>
             <li>
-              <NavLink to="/about" >关于我们</NavLink>
+              <NavLink to="/about" activeStyle={{ color: 'blue' }}>关于我们</NavLink>
             </li>
             <li>
-              <NavLink to="/product">产品中心</NavLink>
+              <NavLink to="/product" activeStyle={{ color: 'blue' }}>产品中心</NavLink>
             </li>
             <li>
-              <NavLink to="/user">用户案例</NavLink>
+              <NavLink to="/user" activeStyle={{ color: 'blue' }}>用户案例</NavLink>
             </li>
             <li>
-              <NavLink to="/company">公司动态</NavLink>
+              <NavLink to="/company" activeStyle={{ color: 'blue' }}>公司动态</NavLink>
             </li>
             <li>
-              <NavLink to="/qualifications">资质证明</NavLink>
+              <NavLink to="/qualifications" activeStyle={{ color: 'blue' }} >资质证明</NavLink>
             </li>
           </ul>
 
@@ -53,7 +53,6 @@ export default function Header() {
           <Route path="/company" exact component={Company} />
           <Route path="/company/:id" component={Details} />
           <Route path="/qualifications" component={Qualifications} />
-          <Route path="/company/:id" exact component={Details} />
           <Route path='/message' component={Message} />
           <Route path='/contact' component={Contact} />
         </Switch>

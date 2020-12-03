@@ -58,7 +58,7 @@ export default function About(props) {
       </div>
       {/* 当前所在页面 */}
       <div className="label">
-        <span>首页&gt;&gt;</span>
+        <span className='shouye'>首页&gt;&gt;</span>
         <span style={{ color: "black" }}>
           {nowurl == "about" ? "关于我们" : ""}
         </span>
