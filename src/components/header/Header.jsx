@@ -6,6 +6,9 @@ import Product from '../product/Product'
 import User from '../user/User'
 import Company from '../company/Company'
 import Qualifications from '../qualifications/Qualifications'
+import MainOne from '../product/atype/MainOne'
+import MainTwo from '../product/atype/MainTwo'
+import MainThree from '../product/atype/MainThree'
 import './header.scss'
 export default function Header() {
     return (
@@ -44,10 +47,13 @@ export default function Header() {
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/about" component={About} />
-                    <Route path="/product" component={Product} />
+                    <Route path="/product" exact component={Product} />
                     <Route path="/user" component={User} />
                     <Route path="/company" component={Company} />
                     <Route path="/qualifications" component={Qualifications} />
+                    <Route path="/product/MainOne" component={MainOne} />  
+                    <Route path="/product/MainTwo" component={MainTwo} />  
+                    <Route path="/product/MainThree" component={MainThree} />  
                 </Switch>
             </div>
         </>

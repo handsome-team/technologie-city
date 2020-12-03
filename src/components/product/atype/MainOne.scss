@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+// 产品图片
+.productmain_1 {
+    width: 100%;
+    height: 570px;
+    text-align: center;
+    line-height: 570px;
+    img {
+        margin: 0 auto;
+    }
+}
+// 选项卡按钮
+.productmain_2 {
+    .yjn_xxkactive{
+        float: left;
+        height: 95px;
+        width: 420px;
+        background-color: #809fd5;
+        font-size: 26px;
+        line-height: 95px;
+        text-align: center;
+        color: white;
+    }
+    .yjn_xxk{
+        float: left;
+        height: 95px;
+        width: 420px;
+        background-color: black;
+        font-size: 26px;
+        line-height: 95px;
+        text-align: center;
+        color: white;
+    }
+}
+// 主要内容
+.xxk_main {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    .imgactive{
+        display: none;
+    }
+    .yjn_aboutcp{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 460px;
+        .yjn_cp_pic{
+            width: 50%;
+            float: left;
+            margin: 0 auto;
+            text-align: center;
+            img {
+                height: 330px;
+                width: 330px;
+            }
+            .yjn_cptext{
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 35px;
+                font-size: 21px;
+                height: 80px;
+                width: 100%;
+                line-height: 40px;
+                color: black;
+            }
+        }
+    }
+    .yjn_aboutcpactive{
+        display: none;
+    }
+}
