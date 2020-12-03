@@ -12,23 +12,22 @@
       background-color: #f6f3f7;
       color: #014aaa;
       .empty-box {
+        display: inline-block;
         width: 80%;
         height: 100%;
+        float: right;
         position: relative;
-        left: 20%;
+        line-height: 30%;
         img {
-          width: 12%;
-          height: 38%;
-          margin: 8% 5% 8% 5%;
-          float: left;
+          margin-top: 5%;
+          width: 15%;
+          margin-right: 30px;
         }
-        .font-box {
-          float: left;
-          h1 {
-            font-size: 30px;
-            font-weight: 400;
-            margin-top: 10%;
-          }
+        h1 {
+          display: inline-block;
+        }
+        p {
+          margin-left: 20%;
         }
       }
     }
@@ -37,23 +36,22 @@
       height: 30%;
       background-color: #fff;
       .empty-box {
+        display: inline-block;
         width: 80%;
         height: 100%;
+        float: right;
         position: relative;
-        left: 20%;
+        line-height: 30%;
         img {
-          width: 12%;
-          height: 38%;
-          margin: 8% 5% 8% 5%;
-          float: left;
+          width: 15%;
+          margin-top: 5%;
+          margin-right: 30px;
         }
-        .font-box {
-          float: left;
-          h1 {
-            font-size: 30px;
-            font-weight: 400;
-            margin-top: 14%;
-          }
+        h1 {
+          display: inline-block;
+        }
+        p {
+          margin-left: 20%;
         }
       }
     }
