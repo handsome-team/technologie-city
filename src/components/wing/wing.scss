@@ -1,0 +1,62 @@
+.wing {
+  width: 5%;
+  height: 270px;
+  background-color: #fff;
+  position: fixed;
+  right: 0px;
+  top: 100px;
+  z-index: 200;
+  .wing-box {
+    width: 100%;
+    height: 100%;
+    .wing-icon {
+      width: 60%;
+      height: 67.5px;
+      img {
+        width: 65%;
+        height: 33%;
+        margin-left: 50%;
+        margin-top: 14px;
+      }
+    }
+  }
+  .wing-div {
+    display: none;
+  }
+  .wing-div1 {
+    display: block;
+    width: 8%;
+    height: 5%;
+    position: fixed;
+    right: 80px;
+    top: 180px;
+    background-color: #014aa9;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .wing-div2 {
+    display: block;
+    width: 8%;
+    height: 5%;
+    position: fixed;
+    right: 80px;
+    top: 235px;
+    background-color: #014aa9;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .wing-div3 {
+    display: block;
+    width: 8%;
+    height: 5%;
+    position: fixed;
+    right: 80px;
+    top: 315px;
+    background-color: #014aa9;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 35px;
+  }
+}

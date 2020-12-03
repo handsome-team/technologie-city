@@ -1,0 +1,71 @@
+.bigDiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  .page {
+    width: 100%;
+    height: 30%;
+    // background: blue;
+    overflow: hidden;
+    margin-top: 150px;
+    span {
+      height: 150px;
+      margin-left: 150px;
+      font-size: 22px;
+      font-style: normal;
+    }
+  }
+  .pageCenter {
+    width: 100%;
+    height: 500px;
+    // background: yellow;
+    margin-top: 100px;
+    .divOne {
+      width: 800px;
+      height: 400px;
+      display: flex;
+      position: relative;
+      left: 20%;
+      top: 10%;
+      background-color: rgba(242, 242, 242, 1);
+      .divLeft {
+        width: 400px;
+        height: 400px;
+        .divLeft-one {
+          width: 300px;
+          height: 80px;
+          margin-left: 30px;
+          padding-top: 25px;
+          border-bottom: 1px solid blueviolet;
+          .keli {
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .shenyang {
+            margin-left: 15px;
+            font-size: 16px;
+            color: #333333;
+          }
+          .text {
+            width: 300px;
+            height: 300px;
+            font-size: 16px;
+            margin-top: 30px;
+          }
+        }
+      }
+      .divRight {
+        width: 800%;
+        height: 10%;
+        position: relative;
+        top: -20%;
+        left: 7%;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
