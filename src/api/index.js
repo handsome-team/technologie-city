@@ -18,4 +18,8 @@ const getCompanyDetail = (id) => {
 const getConnetData = () => {
   return axios.post(baseURL + "/qualifications");
 };
-export { getCompanyData, getCompanyDetail, getConnetData };
+const takeMessage = (obj) => {
+  // console.log(obj)
+  return axios.post(baseURL+"/message",{params:obj})
+}
+export { getCompanyData, getCompanyDetail, getConnetData,takeMessage };
