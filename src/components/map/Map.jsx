@@ -23,7 +23,7 @@ export default function Map() {
                             getconnect.map((item, index) => {
                                 console.log(item)
                                 return (
-                                    <>
+                                    <div key={index}>
                                         <p className="connent-title">联系方式</p>
                                         <div className="connect-number">
                                             <p>联系方式:</p>
@@ -41,7 +41,7 @@ export default function Map() {
                                             <p>地址:</p>
                                             <p>{item.address}</p>
                                         </div>
-                                    </>
+                                    </div>
                                 )
                             })
                         )

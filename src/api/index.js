@@ -25,10 +25,10 @@ const getuserProject = () => {
 const getAboutus = () => {
   return axios.get(baseURL + "/aboutus");
 };
-export {
-  getCompanyData,
-  getCompanyDetail,
-  getConnetData,
-  getuserProject,
-  getAboutus
-};
+// 留言板
+const takeMessage = (obj) => {
+  // console.log(obj)
+  return axios.post(baseURL+"/message",{params:obj})
+}
+export { getCompanyData, getCompanyDetail, getConnetData,takeMessage,getuserProject,
+  getAboutus};
