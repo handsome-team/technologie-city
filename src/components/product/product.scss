@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.product_banner {
+  width: 100%;
+  height: 400pt;
+}
+.product_bread {
+  width: 787pt;
+  margin: 0 auto;
+  margin-top: 45pt;
+  font-size: 15pt;
+  letter-spacing: 3px;
+  text-indent: 8px;
+  margin-bottom: 10pt;
+  .unsele {
+    color: rgb(1, 74, 170);
+  }
+}
+.product_title {
+  width: 787pt;
+  height: 35pt;
+  background-color: #e5ecf6;
+  font-size: 15pt;
+  line-height: 35pt;
+  margin: 0 auto;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-indent: 8px;
+}
+.product_swper {
+  width: 787pt;
+  min-height: 348pt;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 0 auto;
+  margin-bottom: 20pt;
+
+  div {
+    margin: 0 1px;
+  }
+  .qian :hover {
+    cursor: pointer;
+  }
+  .qian {
+    transition: all 0.2s ease-out;
+    width: 138pt;
+    height: 225pt;
+    background: #f2f5fb;
+    color: rgb(1, 74, 170);
+    position: relative;
+    padding: 0 2%;
+    .qian_title {
+      font-weight: bold;
+      margin-top: 34%;
+      margin-bottom: 16%;
+      color: rgb(51, 51, 51);
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .qian_list {
+      font-weight: lighter;
+      font-size: 9pt;
+      margin-left: 6px;
+      span {
+        margin-left: -6pt;
+        display: block;
+      }
+    }
+  }
+  .none {
+    display: none !important;
+  }
+  .block {
+    display: block;
+  }
+  .selec {
+    width: 506pt;
+    height: 240pt;
+    background: rgb(1, 74, 170);
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    // margin: 0 3px;
+    p {
+      margin: 0;
+    }
+    .buton {
+      cursor: pointer;
+    }
+    .selec_img {
+      margin-left: 62px;
+      width: 233pt;
+      height: 290pt;
+      margin-bottom: 6px;
+    }
+    button {
+      width: 66pt;
+      height: 21pt;
+      font-size: 12pt;
+      background-color: #fdb913;
+      border: 1px;
+      color: rgb(255, 255, 255);
+      position: absolute;
+      right: 168px;
+      bottom: 25px;
+    }
+    .selec_right {
+      position: absolute;
+      right: 66px;
+      top: 0;
+      color: rgb(255, 255, 255);
+      width: 28%;
+      .qian_title {
+        font-weight: bold;
+        margin-top: 10%;
+        font-size: 15pt;
+        margin-bottom: 5%;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .qian_list {
+        font-weight: lighter;
+        font-size: 12pt;
+        margin-left: 6px;
+        span {
+          margin-left: -6pt;
+          display: block;
+        }
+      }
+    }
+  }
+}
