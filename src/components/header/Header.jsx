@@ -50,7 +50,7 @@ export default function Header() {
           <Route path="/about" component={About} />
           <Route path="/product" component={Product} />
           <Route path="/user" component={User} />
-          <Route path="/company" exact component={Company} />    
+          <Route path="/company" exact component={Company} />
           <Route path="/company/:id" component={Details} />
           <Route path="/qualifications" component={Qualifications} />
           <Route path="/company/:id" exact component={Details} />
