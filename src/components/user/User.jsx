@@ -53,7 +53,7 @@ export default function User() {
       </div>
       <div className="titlebox">
         <span className='shouye'>首页>></span>
-        <span>关于我们</span>
+        <span>用户案例</span>
       </div>
       {/* 轮播 */}
       <div className="swiperbox">
