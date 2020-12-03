@@ -32,7 +32,7 @@ export default function Company() {
       <div className="companyBanner">
         <img src="/company/banner__u1415.jpg" alt="" />
       </div>
-      <div className="titleboxs">
+      <div className="title-boxs">
         <span className='shouye'>首页>></span>
         <span>关于我们</span>
       </div>

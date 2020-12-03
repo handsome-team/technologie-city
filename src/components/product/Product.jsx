@@ -8,7 +8,7 @@ const Product = () => {
   let [count, setCount] = useState([]);
   useEffect(() => {
     getProductdata().then((res) => {
-      var data = res.data.data;
+      var data = res.data;
       data = data.map((item) => {
         item.child = item.child.split("#");
         return item;
@@ -34,6 +34,7 @@ const Product = () => {
       <div className="product_title">恒温恒湿称重系统</div>
       <div className="product_swper">
         {count.map((item, index) => {
+          console.log(item)
           return (
             <React.Fragment key={index}>
               <div className={state === index ? "selec block" : "selec none"}>
