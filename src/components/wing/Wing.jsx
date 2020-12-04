@@ -1,6 +1,6 @@
 import './wing.scss'
 import { useState } from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function Wing() {
     const [isShow, onShow] = useState(null)
     const iconOver = (index) => {
@@ -23,16 +23,20 @@ export default function Wing() {
                         <img src="/wing/xuanfujiantou@2x.png" alt="" />
                     </div>
                 </a>
-                <div className="wing-icon" onMouseOver={() => { iconOver(0) }} onMouseOut={() => {
-                    iconout(null)
-                }}>
-                    <img src="/wing/dianhua @2x.png" alt="" />
-                </div>
-                <div className="wing-icon" onMouseOver={() => { iconOver(1) }} onMouseOut={() => {
-                    iconout(null)
-                }}>
-                    <img src="/wing/zixun@2x.png" alt="" />
-                </div>
+                <NavLink to='/contact'>
+                    <div className="wing-icon" onMouseOver={() => { iconOver(0) }} onMouseOut={() => {
+                        iconout(null)
+                    }}>
+                        <img src="/wing/dianhua @2x.png" alt="" />
+                    </div>
+                </NavLink>
+                <NavLink to='/message'>
+                    <div className="wing-icon" onMouseOver={() => { iconOver(1) }} onMouseOut={() => {
+                        iconout(null)
+                    }}>
+                        <img src="/wing/zixun@2x.png" alt="" />
+                    </div>
+                </NavLink>
                 <div className="wing-icon" onMouseOver={() => { iconOver(2) }} onMouseOut={() => {
                     iconout(null)
                 }}>

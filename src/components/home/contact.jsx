@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './contact.scss'
 import Map from '../map/Map'
 import Footer from '../footer/Footer'
+import Wing from '../wing/Wing'
 export default class Contact extends Component {
     render() {
         return (
@@ -25,6 +26,7 @@ export default class Contact extends Component {
                 </div>
                 <Map />
                 <Footer />
+                <Wing />
             </div>
         )
     }

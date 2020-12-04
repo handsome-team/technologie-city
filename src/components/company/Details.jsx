@@ -4,6 +4,7 @@ import "./details.scss";
 import { useEffect, useState } from "react";
 import Map from "../map/Map";
 import Footer from "../footer/Footer";
+import Wing from '../wing/Wing'
 export default function Details() {
   const route = useLocation();
   const [dataList, changeDataList] = useState([]);
@@ -21,6 +22,7 @@ export default function Details() {
 
   return (
     <div className="bigDiv">
+      <Wing />
       {dataList[0] && (
         <>
           <div className="page">

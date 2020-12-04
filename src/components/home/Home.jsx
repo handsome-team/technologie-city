@@ -6,6 +6,7 @@ import Companys from './companys'
 import Footer from '../footer/Footer'
 import Map from '../map/Map'
 import { Carousel } from 'antd';
+import Wing from '../wing/Wing'
 const contentStyle = {
     height: '90vh',
     color: '#fff',
@@ -17,6 +18,7 @@ export default class Home extends Component {
     render() {
         return (
             <div className='home-outerBox'>
+                <Wing />
                 {/* 轮播图 */}
                 <div className='bannery'>
                     <Carousel autoplay>

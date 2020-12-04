@@ -14,6 +14,8 @@ import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import Footer from "../footer/Footer";
 import Map from "../map/Map";
+import Wing from '../wing/Wing'
+
 // install Swiper components
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export default function Company() {
@@ -29,6 +31,7 @@ export default function Company() {
 
   return (
     <div className="companyBox">
+      <Wing />
       <div className="companyBanner">
         <img src="/company/banner__u1415.jpg" alt="" />
       </div>

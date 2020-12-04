@@ -3,7 +3,7 @@ import { useLocation, NavLink } from "react-router-dom";
 import "./product.scss";
 import { getProductdata } from "../../api/index";
 import Footer from '../footer/Footer'
-
+import Wing from '../wing/Wing'
 const Product = () => {
   let [count, setCount] = useState([]);
   useEffect(() => {
@@ -20,7 +20,8 @@ const Product = () => {
   const [state, setState] = useState(1);
 
   return (
-    <div>
+    <div className="productcontainer">
+      <Wing />
       <img className="product_banner" src="/Product/q_bg.png" alt="" />
       <div className="product_bread">
         <NavLink to="/">

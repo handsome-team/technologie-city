@@ -5,6 +5,7 @@ import { getAboutus } from "../../api/index";
 import { useState, useEffect } from "react";
 import Footer from '../footer/Footer'
 import Map from '../map/Map'
+import Wing from '../wing/Wing'
 // 组件
 export default function About(props) {
   // 当前页面
@@ -52,6 +53,7 @@ export default function About(props) {
   };
   return (
     <div className="aboutcontainer">
+      <Wing />
       {/* 顶部图片 */}
       <div className="topimg">
         <img src={`${process.env.PUBLIC_URL}/about/u421.png`} />

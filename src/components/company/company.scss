@@ -1,8 +1,10 @@
 .companyBox {
   width: 100%;
   height: 100%;
-  position: relative;
-  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
   .companyBanner {
     width: 100%;
     height: 420px;

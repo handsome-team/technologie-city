@@ -4,6 +4,7 @@ import { getuserProject } from "../../api/index";
 import Footer from '../footer/Footer'
 import Map from '../map/Map'
 import './user.scss'
+import Wing from '../wing/Wing'
 function onChange(a, b, c) {
   console.log(a, b, c);
 }
@@ -42,6 +43,7 @@ export default function User() {
   };
   return (
     <div className='usercontainer'>
+      <Wing />
       <div className="user-banner">
         <img src="/user/banner___u1183.png" alt="关于我们banner" />
         <div className='fontbox'>

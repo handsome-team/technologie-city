@@ -1,6 +1,10 @@
 .usercontainer {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
   .user-banner {
     width: 100%;
     height: 600px;
@@ -13,7 +17,7 @@
       width: 60%;
       height: 40%;
       position: absolute;
-      top: 20%;
+      top: 124%;
       left: 9%;
       // background: salmon;
       color: #ffffff;

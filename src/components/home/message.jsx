@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './message.scss'
 import Footer from '../footer/Footer'
 import { takeMessage } from '../../api/index'
-
+import Wing from '../wing/Wing'
 export default class Message extends Component {
     constructor(props) {
         super(props)
@@ -90,6 +90,7 @@ export default class Message extends Component {
                 </div>
             </div>
             <Footer />
+            <Wing />
         </>
         )
     }
